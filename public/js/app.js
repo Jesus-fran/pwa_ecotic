@@ -292,25 +292,29 @@ getMensajes();
 
 
 // Detectar cambios de conexión
+
 function isOnline() {
 
     if (navigator.onLine) {
         // tenemos conexión
         // console.log('online');
-        $.mdtoast('Página online', {
-            interaction: true,
-            interactionTimeout: 1000,
-            actionText: 'Bien!'
-        });
+        alert("Página online");
+        // $.mdtoast('Página online', {
+        //     interaction: true,
+        //     interactionTimeout: 1000,
+        //     actionText: 'Bien!'
+        // });
 
 
     } else {
         // No tenemos conexión
-        $.mdtoast('Página offline', {
-            interaction: true,
-            actionText: 'Bien!',
-            type: 'warning'
-        });
+        // $.mdtoast('Página offline', {
+        //     interaction: true,
+        //     actionText: 'Bien!',
+        //     type: 'warning'
+        // });
+        alert("Página en modo offline");
+
     }
 
 }
